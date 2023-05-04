@@ -2,7 +2,7 @@
   "name": "semantic-release-jira",
   "version": "1.0.0",
   "description": "",
-  "repository": "https://github.com/Cid53/semantic-release-jira.git",
+  "repository": "git@github.com:Cid53/semantic-release-jira.git",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
