@@ -40,3 +40,5 @@ next-env.d.ts
 
 /docs/.vuepress/.cache
 /docs/.vuepress/.temp
+
+/dist
