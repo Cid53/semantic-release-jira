@@ -44,7 +44,7 @@ The plugin can be configured in the [**semantic-release** configuration file](ht
 
 | Option     | Description                                                                                                                         |
 |------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `appName`  | Name that will be used to prefix version name in JIRA. Example: `my-app:1.2.3`                                                      |
+| `appName`  | Name that will be used to prefix version name in JIRA. Example: `my-app` will generate versions in JIRA as `my-app:1.2.3`           |
 | `jiraUrl`  | URL to your JIRA instance. Example: `https://<my-org>.atlassian.net`                                                                |
 | `authUser` | User used for JIRA authentication. Example: `user@exmaple.com`                                                                      |
 | `projects` | List of project keys to use for ticket detection. Example: `["MYPROJ"]` will only detect tickets belonging to the "MYPROJ" project. |
