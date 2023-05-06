@@ -1,5 +1,5 @@
 # semantic-release-jira
-A Semantic Release plugin that assigns the release version to tickets belonging to the release.
+A Semantic Release plugin that assigns the release version to tickets found in commit messages.
 
 | Step               | Description                                                                                                 |
 |--------------------|-------------------------------------------------------------------------------------------------------------|
