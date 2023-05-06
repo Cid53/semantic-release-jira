@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "repository": "git@github.com:Cid53/semantic-release-jira.git",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",

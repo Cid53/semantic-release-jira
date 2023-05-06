@@ -1,17 +1,11 @@
 import { verifyConditions } from "../src";
-import { Config } from "../src/config";
-import { contextWithAuth, createContext } from "./_helpers/context";
+import createContext, { contextWithAuth } from "./__helpers__/createContext";
 import AggregateError from "aggregate-error";
 import { ErrorCode } from "../src/verifyConditions";
 import SemanticReleaseError from "@semantic-release/error";
+import createConfig from "./__helpers__/createConfig";
 
-const config: Config = {
-  appName: "my-app",
-  authToken: "1234",
-  authUser: "username",
-  jiraUrl: "http://localhost",
-  projects: ["ABC", "123"],
-};
+const config = createConfig();
 
 const catchErrors = (func: () => any) => {
   const errors: SemanticReleaseError[] = [];

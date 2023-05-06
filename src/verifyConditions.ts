@@ -3,6 +3,7 @@ import { Context } from "semantic-release";
 import { Config, getConfig } from "./config";
 import SemanticReleaseError from "@semantic-release/error";
 import AggregateError from "aggregate-error";
+
 const isNonEmptyString = (value: any) =>
   isString(value) && !isEmpty(value.trim());
 const isArrayOfNonEmptyStrings = (value: any) =>
@@ -55,9 +56,17 @@ const VALIDATORS: Record<keyof Config, Validator> = {
   },
 };
 
-export function verifyConditions(pluginConfig: Config, context: Context) {
+export default function verifyConditions(
+  pluginConfig: Config,
+  context: Context
+) {
   const config = getConfig(pluginConfig, context);
   const errors: Error[] = [];
+
+  context.logger.error(
+    `Failed to associate JIRA tickets to new version.`,
+    new Error("Test Error")
+  );
 
   Object.entries(config).forEach(([option, value]) => {
     const validator = VALIDATORS[option as keyof Config];

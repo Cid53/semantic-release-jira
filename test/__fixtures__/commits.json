@@ -1,0 +1,61 @@
+{
+  "withTickets": [
+    {
+      "author": { "email": "", "name": "", "short": "" },
+      "body": "",
+      "commit": { "long": "", "short": "" },
+      "committer": { "email": "", "name": "", "short": "" },
+      "committerDate": "",
+      "hash": "",
+      "message": "feat: single line [ABC-123]",
+      "subject": "",
+      "tree": { "long": "", "short": "" }
+    },
+    {
+      "author": { "email": "", "name": "", "short": "" },
+      "body": "",
+      "commit": { "long": "", "short": "" },
+      "committer": { "email": "", "name": "", "short": "" },
+      "committerDate": "",
+      "hash": "",
+      "message": "feat: multiline\n\nABC-456",
+      "subject": "",
+      "tree": { "long": "", "short": "" }
+    },
+    {
+      "author": { "email": "", "name": "", "short": "" },
+      "body": "",
+      "commit": { "long": "", "short": "" },
+      "committer": { "email": "", "name": "", "short": "" },
+      "committerDate": "",
+      "hash": "",
+      "message": "feat: duplicate ABC-456",
+      "subject": "",
+      "tree": { "long": "", "short": "" }
+    },
+    {
+      "author": { "email": "", "name": "", "short": "" },
+      "body": "",
+      "commit": { "long": "", "short": "" },
+      "committer": { "email": "", "name": "", "short": "" },
+      "committerDate": "",
+      "hash": "",
+      "message": "feat: multi project DEF-123",
+      "subject": "",
+      "tree": { "long": "", "short": "" }
+    }
+  ],
+  "withOutTickets": [
+    {
+      "author": { "email": "", "name": "", "short": "" },
+      "body": "",
+      "commit": { "long": "", "short": "" },
+      "committer": { "email": "", "name": "", "short": "" },
+      "committerDate": "",
+      "hash": "",
+      "message": "feat: single line",
+      "subject": "",
+      "tree": { "long": "", "short": "" }
+    }
+  ]
+}

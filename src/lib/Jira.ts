@@ -5,10 +5,10 @@ export interface CreateVersionResponse {
   id: string;
   self: string;
   name: string;
-  projectId: number;
+  projectId: string;
 }
 
-interface GetProjectResponse {
+export interface GetProjectResponse {
   id: string;
 }
 

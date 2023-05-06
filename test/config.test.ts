@@ -1,5 +1,5 @@
 import { getConfig } from "../src/config";
-import { contextWithAuth, createContext } from "./_helpers/context";
+import createContext, { contextWithAuth } from "./__helpers__/createContext";
 
 const options = {
   appName: "my-app",

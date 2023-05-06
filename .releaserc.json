@@ -4,10 +4,10 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
-      "./dist",
+      "./dist/src",
       {
         "appName": "dw-web",
-        "jiraUrl": "https://dealerware.atlassian.net",
+        "jiraUrl": "http://localhost",
         "projects": ["B2C"]
       }
     ]

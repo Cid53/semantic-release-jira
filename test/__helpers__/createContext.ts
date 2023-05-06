@@ -1,6 +1,6 @@
 import { Context } from "semantic-release";
 
-export function createContext(merge: Partial<Context> = {}) {
+export default function createContext(overwrite: Partial<Context> = {}) {
   const context = {
     commits: [],
     env: {},
@@ -25,7 +25,7 @@ export function createContext(merge: Partial<Context> = {}) {
       watch: jest.fn(),
     },
     nextRelease: undefined,
-    ...merge,
+    ...overwrite,
   };
 
   return context as unknown as Context;
