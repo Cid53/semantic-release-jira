@@ -37,17 +37,17 @@ The plugin can be configured in the [**semantic-release** configuration file](ht
 | Name            | Description                                                                                       |
 |-----------------|---------------------------------------------------------------------------------------------------|
 | JIRA_AUTH_TOKEN | **Required**: Token used for JIRA authentication. See [JIRA Authentication](#jira-authentication) |
-| JIRA_AUTH_USER  | User used for JIRA authentication. Can also be set in options.                                    |
+| JIRA_AUTH_USER  | User for JIRA authentication. Can also be set in options.                                         |
 
 
 ### Options
 
-| Option     | Description                                                                                                                         |
-|------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `appName`  | Name that will be used to prefix version name in JIRA. Example: `my-app` will generate versions in JIRA as `my-app:1.2.3`           |
-| `jiraUrl`  | URL to your JIRA instance. Example: `https://<my-org>.atlassian.net`                                                                |
-| `authUser` | User used for JIRA authentication. Example: `user@exmaple.com`                                                                      |
-| `projects` | List of project keys to use for ticket detection. Example: `["MYPROJ"]` will only detect tickets belonging to the "MYPROJ" project. |
+| Option     | Description                                                                                                                                       |
+|------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| `appName`  | **Required**: Name that will be used to prefix version name in JIRA. Example: `my-app` will generate versions in JIRA as `my-app:1.2.3`           |
+| `projects` | **Required**: List of project keys to use for ticket detection. Example: `["MYPROJ"]` will only detect tickets belonging to the "MYPROJ" project. |
+| `jiraUrl`  | **Required**: URL to your JIRA instance. Example: `https://<my-org>.atlassian.net`                                                                |
+| `authUser` | User for JIRA authentication. Can also be set in environment variable. Example: `user@exmaple.com`                                                |
 
 ### JIRA Authentication
 
