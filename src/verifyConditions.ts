@@ -63,11 +63,6 @@ export default function verifyConditions(
   const config = getConfig(pluginConfig, context);
   const errors: Error[] = [];
 
-  context.logger.error(
-    `Failed to associate JIRA tickets to new version.`,
-    new Error("Test Error")
-  );
-
   Object.entries(config).forEach(([option, value]) => {
     const validator = VALIDATORS[option as keyof Config];
 
