@@ -45,7 +45,7 @@ export async function createVersions(
 
   const createVersions = Object.entries(groupedTickets).map(
     async ([projectKey, tickets]) => {
-      const versionName = `${appName}:${nextRelease!.version}`;
+      const versionName = `${appName}:${nextRelease?.version}`;
       const projectId = await getProjectId(projectKey);
 
       logger.log(
